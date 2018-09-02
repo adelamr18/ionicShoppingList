@@ -1,0 +1,61 @@
+
+img{
+    width:100; 
+    }
+    .navbar-nav .nav-item.active#shopping-help  a i {
+            font-size:22px;
+    }
+    .form-group.has-feedback i {
+           color:red;
+           font-size:22px;
+        pointer-events: all;
+        padding-top:86px;
+    }
+    input,
+    input::-webkit-input-placeholder {
+        font-size: 16px;
+    }
+    label{
+        font-size:16px;
+        font-weight:700;
+    }
+        .form-group.has-feedback#add-extensions{
+            padding-top:86px;
+        }
+        .product-suggestions{
+    float:left;
+    width:125px;
+    height:39px;
+    border:1px black solid;
+    margin-right:10px;
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom:3px;
+    background-color: lightcyan;
+    font-weight: 600;
+    color: mediumblue;
+    border-radius:5%;
+    padding-left: 1px;
+    padding-right:0;
+        }
+        .card#add-suggested-color{
+            background-color: lavenderblush;
+        }
+    .box {
+        position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+    vertical-align: middle;
+     }
+     body{
+         background-color: wheat;
+     }
+     .pane{
+         background-color: wheat;
+     }
+    .card#show-added-products{
+        margin-top: 15px;   
+    }

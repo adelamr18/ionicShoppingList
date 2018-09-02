@@ -1,0 +1,60 @@
+
+    <div class="form-group has-feedback" id="add-extensions">
+        <input type="text" ng-model="product" class="form-control" placeholder="Produktenamen eingeben" />
+        <i class="glyphicon glyphicon-plus form-control-feedback" ng-click="vm.logProduct(product) "></i>
+    </div>
+    
+    <label for="exampleInputEmail1">Vorschlage Produktenamen:</label>
+    <div class="card" id="add-suggested-color">
+        <div class="card-body">
+            <div class="container">
+                <div ng-repeat="product in vm.products ">
+                    <div class="product-suggestions  col-sm-10 col-md-4 col-lg-10 col-xl-10">{{product.name.split(" ")[0]}}
+                            <!-- <div class="product-suggestions col-sm-6 col-md-4 col-lg-10 col-xl-10">{{product.productName}} -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <label>Einkaufsliste:</label>
+    <div class="table-responsive-sm table-responsive-md table-responsive-lg table-responsive-xl">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">
+                        ProduktID
+                    </th>
+                    </th>
+                    <th scope="col">
+                        Produckt
+                    </th>
+                    </th>
+                    <th scope="col">
+                        Preis
+                    </th>
+                    </th>
+                    <th scope="col">
+                            <a ng-click="order('brand')">
+                                Kategorie
+                                <span ng-show="predicate === 'brand'" class="fa fa-caret-down" ng-class="{reverse:reverse}"></span>
+                            </a>
+                        </th>
+                    <th scope="col">
+                        Bild
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="input in vm.temp | orderBy:predicate:reverse track by $index">
+                    <th class="table-primary">{{input.id}}</th>
+                    <td class="table-primary">{{input.name}}</td>
+                    <td class="table-primary">{{input.prices.price}}$</td>
+                    <td class="table-primary" >{{input.brand}}</td>
+                    <td class="table-primary" >
+                        <img ng-src="{{input.images.list['90']}}">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>

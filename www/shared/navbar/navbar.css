@@ -1,0 +1,49 @@
+.navbar.fixed-top.navbar-expand-lg.navbar-dark.bg-dark#bootstrap-overides{
+    position:fixed;
+    top:0;
+    color:white;
+    border-radius: 0%;
+}
+.navbar.navbar-expand-lg.navbar-dark.bg-dark#bootstrap-overides a:hover{
+    color:red;
+    letter-spacing: 0.1em;
+    font-family:serif;
+    transition:1s all ease-in-out;    
+}
+.navbar-nav .nav-item.active#shopping-text {
+position: absolute;
+left:570px; 
+top:14px;
+font-size:18px;
+}
+.navbar-nav .nav-item.active#shopping-text #productsprice a:hover{
+    color:blue;
+    letter-spacing: 0.1em;
+    font-family:serif;
+    transition:1s all ease-in-out;  
+}
+.navbar-nav .nav-item.active#shopping-text #productsprice a{
+    color:white;
+}
+.navbar-nav .nav-item.active#shopping-text #productsprice a i{
+    font-size:18px;
+}
+.navbar-nav .nav-item.active#shopping-help {
+    position: absolute;
+    left:1171px;
+    top:14px;
+    font-size:18px; 
+    color:white;
+    }
+    .navbar-nav .nav-item.active#shopping-help a {
+        color:white;
+    }
+    .navbar-nav .nav-item.active#shopping-help #help  a:hover {
+        color:rgb(178,249,178);
+        letter-spacing: 0.1em;
+        font-family:serif;
+        transition:1s all ease-in-out; }
+    .navbar-nav .nav-item.active#shopping-help  a i {
+        font-size:22px;
+    }
+ 
